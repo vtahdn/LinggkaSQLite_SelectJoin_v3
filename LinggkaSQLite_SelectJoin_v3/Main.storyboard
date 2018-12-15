@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fbk-VR-8og">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ACf-lB-oOj">
+            <objects>
+                <navigationController id="Fbk-VR-8og" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lQD-ez-JJP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EHT-mY-2um" kind="relationship" relationship="rootViewController" id="2VZ-Pp-SMS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iwu-i1-WKo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="308"/>
+        </scene>
+        <!--ARTISTS-->
+        <scene sceneID="tsA-3F-MeK">
+            <objects>
+                <viewController id="3zR-3V-4Zl" customClass="ViewArtists" customModule="LinggkaSQLite_SelectJoin_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OFX-zn-SzX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PRE-Ia-xSV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PRE-Ia-xSV" firstAttribute="leading" secondItem="1xd-X0-YTb" secondAttribute="leading" id="H7z-aa-uMa"/>
+                            <constraint firstItem="PRE-Ia-xSV" firstAttribute="bottom" secondItem="1xd-X0-YTb" secondAttribute="bottom" id="OTW-jH-wZs"/>
+                            <constraint firstItem="PRE-Ia-xSV" firstAttribute="trailing" secondItem="1xd-X0-YTb" secondAttribute="trailing" id="X3O-GD-Z5i"/>
+                            <constraint firstItem="PRE-Ia-xSV" firstAttribute="top" secondItem="1xd-X0-YTb" secondAttribute="top" id="ldg-M7-MkJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1xd-X0-YTb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ARTISTS" id="7bX-v6-U9v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2MJ-Uz-816" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="1122"/>
+        </scene>
+        <!--ALBUMS-->
+        <scene sceneID="1dl-cl-tJh">
+            <objects>
+                <viewController id="V4h-jV-ZPA" customClass="ViewAlbums" customModule="LinggkaSQLite_SelectJoin_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v0x-Zj-Prt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-tR-b51">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9NK-tR-b51" firstAttribute="bottom" secondItem="WLp-ht-qvM" secondAttribute="bottom" id="002-ZI-Em7"/>
+                            <constraint firstItem="9NK-tR-b51" firstAttribute="leading" secondItem="WLp-ht-qvM" secondAttribute="leading" id="Ldf-ix-ctl"/>
+                            <constraint firstItem="9NK-tR-b51" firstAttribute="trailing" secondItem="WLp-ht-qvM" secondAttribute="trailing" id="LzD-8K-SPg"/>
+                            <constraint firstItem="9NK-tR-b51" firstAttribute="top" secondItem="WLp-ht-qvM" secondAttribute="top" id="fXF-mB-oYd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WLp-ht-qvM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ALBUMS" id="adu-eZ-YeY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="36d-2e-yfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="641"/>
+        </scene>
+        <!--SONGS-->
+        <scene sceneID="FKj-c2-YxP">
+            <objects>
+                <viewController id="tDp-Dv-DqH" customClass="ViewSongs" customModule="LinggkaSQLite_SelectJoin_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Du3-8J-Yy7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mnR-mr-Ehz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mnR-mr-Ehz" firstAttribute="leading" secondItem="QfA-ui-obp" secondAttribute="leading" id="8H7-Ny-p0n"/>
+                            <constraint firstItem="mnR-mr-Ehz" firstAttribute="bottom" secondItem="QfA-ui-obp" secondAttribute="bottom" id="J9i-Vr-kZa"/>
+                            <constraint firstItem="mnR-mr-Ehz" firstAttribute="top" secondItem="QfA-ui-obp" secondAttribute="top" id="ftN-rU-NWM"/>
+                            <constraint firstItem="mnR-mr-Ehz" firstAttribute="trailing" secondItem="QfA-ui-obp" secondAttribute="trailing" id="rJc-Dw-hQe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QfA-ui-obp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SONGS" id="lFJ-f0-LcU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1X-AA-Bl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725.5999999999999" y="-24.7376311844078"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="95R-bT-KD9">
+            <objects>
+                <tabBarController id="EHT-mY-2um" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lhh-pi-Pmo">
+                        <barButtonItem key="leftBarButtonItem" image="btn_add" id="RWr-b2-78Q">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="btn_search" id="nXJ-RJ-FwF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yX3-j5-DT3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tDp-Dv-DqH" kind="relationship" relationship="viewControllers" id="l07-eZ-6Fq"/>
+                        <segue destination="V4h-jV-ZPA" kind="relationship" relationship="viewControllers" id="vZi-Zb-ZUy"/>
+                        <segue destination="NhA-xr-wqu" kind="relationship" relationship="viewControllers" id="0wC-db-emL"/>
+                        <segue destination="3zR-3V-4Zl" kind="relationship" relationship="viewControllers" id="njy-N0-wj0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CfX-4f-Evk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="309"/>
+        </scene>
+        <!--PLAYLIST-->
+        <scene sceneID="Pua-Ge-0q3">
+            <objects>
+                <viewController id="NhA-xr-wqu" customClass="ViewPlaylists" customModule="LinggkaSQLite_SelectJoin_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ZF-pv-WYg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="owg-wx-bpK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="owg-wx-bpK" firstAttribute="bottom" secondItem="C1X-DC-aK8" secondAttribute="bottom" id="68h-w7-8KI"/>
+                            <constraint firstItem="owg-wx-bpK" firstAttribute="leading" secondItem="C1X-DC-aK8" secondAttribute="leading" id="BNQ-2J-PDq"/>
+                            <constraint firstItem="owg-wx-bpK" firstAttribute="top" secondItem="C1X-DC-aK8" secondAttribute="top" id="eEk-jQ-rzY"/>
+                            <constraint firstItem="owg-wx-bpK" firstAttribute="trailing" secondItem="C1X-DC-aK8" secondAttribute="trailing" id="kFE-6m-CAR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C1X-DC-aK8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PLAYLIST" id="2xQ-gE-aeE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nif-L3-cmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="1121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10.jpg" width="640" height="640"/>
+        <image name="11.jpg" width="1080" height="1080"/>
+        <image name="12.jpg" width="640" height="640"/>
+        <image name="9.jpg" width="640" height="640"/>
+        <image name="btn_add" width="30" height="30"/>
+        <image name="btn_search" width="30" height="30.5"/>
+    </resources>
+</document>
